@@ -21,10 +21,6 @@ const db = knex({
 
 const app = express();
 
-db.select("*").from("users").then(data => {
-  console.log(data);
-});
-
 app.use(cors());
 app.use(bodyParser.json());
 
